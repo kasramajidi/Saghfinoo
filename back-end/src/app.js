@@ -20,3 +20,5 @@ app.use((req, res, next) => {
     console.log("this path is not found", req.path);
     res.status(404).json({ message: "404! Path Not Found. Please check the path/method" })
 })
+
+module.exports = app
