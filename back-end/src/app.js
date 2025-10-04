@@ -5,6 +5,7 @@ const cookieParser = require("cookie-parser")
 require("dotenv").config()
 const path = require("path")
 
+const authRouter = require("./modules/Auth/auth.route")
 
 //* Body Parser
 app.use(express.json())
@@ -14,6 +15,9 @@ app.use(express.urlencoded({ extended: true }))
 app.use(cookieParser())
 app.use(cors())
 
+//* Routes
+
+app.use("/auth", authRouter)
 
 //* 404 Error Handler
 app.use((req, res, next) => {

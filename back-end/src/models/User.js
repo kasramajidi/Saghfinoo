@@ -18,17 +18,16 @@ const userSchema = new mongoose.Schema({
         enum: ["User", "Admin"],
         default: "User"
     },
-    number: {
+    phone: {
         type: String,
         match: [/^\d{11}$/, "Phone number must be 11 digits"],
         unique: true
     },
     profile: {
-        fullName: { type: String, trim: true, required: true },
+        fullName: { type: String, trim: true, default: null },
         phone: {
             type: String,
-            match: [/^\d{11}$/, "Phone number must be 11 digits"],
-            unique: true
+            match: [/^\d{11}$/, "Phone number must be 11 digits"]
         },
         avatar: { type: String, default: null }
     },
