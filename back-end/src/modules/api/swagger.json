@@ -1,0 +1,27 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "Saghfinoo API",
+    "description": "API documentation for Saghfinoo project - A comprehensive backend system with authentication and user management",
+    "version": "1.0.0",
+    "contact": {
+      "name": "Saghfinoo Team",
+      "email": "saghfinoo040@gmail.com",
+      "url": "https://saghfinoo.com"
+    },
+    "license": {
+      "name": "MIT",
+      "url": "https://opensource.org/licenses/MIT"
+    }
+  },
+  "servers": [
+    {
+      "url": "http://localhost:9500",
+      "description": "Development server"
+    },
+    {
+      "url": "https://api.saghfinoo.com",
+      "description": "Production server"
+    }
+  ]
+}
